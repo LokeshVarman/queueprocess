@@ -1,8 +1,4 @@
 using System;
-using System.Collections;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
 
 namespace addelement
@@ -12,6 +8,7 @@ namespace addelement
         static void Main(string[] args)
         {
             Process p = new Process();
+            Console.WriteLine("passing elements to be added from this process ............");
             p.StartInfo.FileName = "queue.exe";
             p.StartInfo.Arguments = "1 2 3 4 5 6";
             p.Start();
